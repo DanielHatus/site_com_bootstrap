@@ -4,7 +4,8 @@
 }
 
 :root{
---font-color:"font-color";    
+--font-color:"font-color";
+--primary-color:rgb(135, 135, 247);    
 }
 
 
@@ -18,17 +19,57 @@ header{
     height:75px;
     background-color: black;
 }
-h1{
+h1>a{
     color:white;
     font-family:var(--font-color);
+    text-decoration:none;
+    font-size:2rem;
 }
 ul{
     list-style: none;
 }
 li{
     color:white;
+    text-decoration:none;
+}
+li:hover{
+    background-color:white;
+    color:black;
+    border-radius:5px;
+    transition-duration: 1s;
 }
 .lupa{
     color:white;
-    font-size:1.3rem;
+    font-size:1.2rem;
+}
+.lupa:hover{
+    color:var(--primary-color)
+}
+.form-control{
+    border:none;
+    outline:none;
+    box-shadow:none;
+    border-radius:0px;
+    background-color:transparent;
+    border-bottom:2px solid white;
+    padding-bottom:0px !important;
+}
+.form-floating>.form-control:focus{
+    border:none;
+    outline:none;
+    box-shadow:none;
+    border-radius:0px;
+    background-color:transparent;
+    border-bottom:2px solid white;
+    padding-bottom:0px !important;
+}
+.form-floating>.form-control:not(:placeholder-shown~.form-label){
+color:white !important;
+}
+.form-label{
+    color:white !important;
+    background-color:transparent !important;
+}
+.form-label::after{
+    background-color:transparent !important;
 }

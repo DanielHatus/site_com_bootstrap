@@ -4,28 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"><!--importação do css do framework-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"><!--importação do css do framework-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" defer></script><!--importação do js com popper do framework-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><!--importação dos icons do framework-->
     <link rel="stylesheet" href="estilo.css"><!--link da exportação do css-->
 </head>
 <body>
     <header class="fixed-top container-fluid d-flex m-0 align-items-center justify-content-between">
-        <h1>TITULO PRINCIPAL</h1>
+        <h1 class="mt-4"><a href="#">TITULO PRINCIPAL</a></h1>
 
-        <nav class="mt-5">
+        <nav class="mt-5 me-5">
             <ul class="d-flex">
-                <li>home</li>
-                <li class="ml-3">sobre nós</li>
-                <li class="ml-3">veja mais</li>
-                <li class="ml-3">meu repositório</li>
+                <li><strong><i class="bi-house-fill me-1"></i>Home</strong></li>
+                <li class="ms-3"><strong> <i class="bi-book-fill me-1"></i>Sobre Nós</strong></li>
+                <li class="ms-3"><strong> <i class="bi-arrow-right me-1"></i>Veja Mais</strong></li>
+                <li class="ms-3"><strong> <i class="bi-github me-1"></i>Meu Repositório</strong></li>
             </ul>
     </nav>
         
-    <div class="form-floating">
-       
-    </div>
-        
+    <div class="d-flex align-items-center justify-content-start">
+
+        <div class="form-floating mb-4">
+           <input type="text" name="pesquisa" id="pesquisa" class="form-control w-100" placeholder="">
+           <label for="pesquisa" class="form-label"><strong>Pesquisar</strong></label>
+        </div>
+
+        <i class="bi-search lupa ms-1 mt-4"></i>
+    </div>       
     </header>
 
     <main>
