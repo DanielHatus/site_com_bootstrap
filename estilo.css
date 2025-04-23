@@ -3,8 +3,16 @@
     src: url(fontes/Speedway.ttf) format(truetype) ;
 }
 
+@font-face {
+    font-family:"font-subtitulo" ;
+    src: url(fontes/fontemustang.ttf) format(truetype);
+}
+*{
+    box-sizing:border-box;
+}
 :root{
 --font-color:"font-color";
+--fonte-subtitulo:"font-subtitulo";
 --primary-color:rgb(135, 135, 247);    
 }
 
@@ -13,17 +21,17 @@ html{
     font-size:16px;
 }
 body{
-    background-color:white;
+    background-color:rgb(0, 0, 0);
 }
 header{
     height:75px;
     background-color: black;
 }
 h1>a{
-    color:white;
+    color:rgb(17, 58, 172);
     font-family:var(--font-color);
     text-decoration:none;
-    font-size:2rem;
+    font-size:1.54rem;
 }
 ul{
     list-style: none;
@@ -33,8 +41,8 @@ li{
     text-decoration:none;
 }
 li:hover{
-    background-color:white;
-    color:black;
+    background-color:rgb(0, 0, 0);
+    color:rgb(17, 58, 172);
     border-radius:5px;
     transition-duration: 1s;
 }
@@ -69,7 +77,59 @@ color:white !important;
 .form-label{
     color:white !important;
     background-color:transparent !important;
+    transform: translateY(1rem) translateX(-0.8rem);
 }
 .form-label::after{
     background-color:transparent !important;
+}
+main{
+    width:85%;
+    outline:2px solid rgb(102, 102, 248);
+    border:2px solid black;
+    height:300vh;
+    background-color:white;
+}
+main>h2{
+    font-family:var(--fonte-subtitulo);
+    color:rgb(75, 75, 206);
+    font-size:2.1rem;
+}
+.clicavel{
+    color:rgb(57, 143, 241);
+    text-decoration:underline;
+}
+p{
+    text-indent: 25px;
+    text-align:justify;
+}
+.img-1{
+    background-image:url(imagens/img-pessoa-com-duvida.png);
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    width:60%;
+    height:40%;
+}
+.style-card{
+    border:1px solid black;
+    width:250px;
+    height:542px;
+    outline:2px solid blue;   
+}
+.img-js{
+    background-image:url(imagens/javascript-img.png);
+    background-size:100% 100%;
+    width:100%;
+    height:50%;
+}
+.img-python{
+    background-image:url(imagens/logo-python.jpg);
+    background-size:100% 100%;
+    width:100%;
+    height:50%;
+}
+.img-java{
+    background-image:url(imagens/logo-java.jpg);
+    background-size:100% 100%;
+    width:100%;
+    height:50%;
 }
