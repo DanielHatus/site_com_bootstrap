@@ -86,13 +86,14 @@ main{
     width:85%;
     outline:2px solid rgb(102, 102, 248);
     border:2px solid black;
-    height:400vh;
+    height:600vh;
     background-color:white;
 }
 main>h2{
     font-family:var(--fonte-subtitulo);
     color:rgb(75, 75, 206);
     font-size:2.1rem;
+    text-shadow: 3px 3px 3px black;
 }
 .clicavel{
     color:rgb(57, 143, 241);
@@ -107,7 +108,7 @@ p{
     background-size:100% 100%;
     background-repeat: no-repeat;
     width:60%;
-    height:30%;
+    height:15%;
 }
 .style-card{
     border:1px solid black;
@@ -137,4 +138,19 @@ abbr{
     border:none;
     text-decoration:underline !important;
     color:rgb(57, 143, 241);
+}
+.corpo-carousel-1{
+    width:70%;
+    height:11%;
+    border:1px solid black;
+    outline:2px solid blue;
+    margin:auto;
+    border-radius:8px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) saturate(100%) invert(6%) sepia(77%) saturate(2470%) hue-rotate(202deg) brightness(55%) contrast(150%);
+}
+.carousel-indicators .active{
+    background-color:blue !important;
 }
